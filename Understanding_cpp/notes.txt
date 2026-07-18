@@ -1,0 +1,59 @@
+In Basics.cpp
+    I had to use 'std' a lot of times (it means standard). Eg. std::cout and std::cin.
+    instead i can do this:
+        #include <iostream>
+        using namespace std;
+        int main(){
+            cout << "aedcfyhn";
+            return 0;
+        } 
+    This way I dont have to repeat 'std' everytime before printing or inputing.
+
+
+Local variable takes precedence over global varable if they have the same name.
+    How to define a global varable?
+        Declare the variable below usong namespace std;  and above int main(){}.
+        Inshort: dont include it in the any function.
+    
+
+If you print a varable with data type boolean if it is true it will print 1 else it will print 0.
+
+User defined Header files
+    These can be included like so:
+        #include"name.h"
+
+
+There two ways to go to the next line;
+    cout<<"blah\n";
+           or
+    cout<<"blah"<<endl;
+
+
+Consatnt Variables
+    Constant variables cannot change once defined.
+        syntax: const data_type variable_name = value;
+    It shows error if the varable value is changed in the code
+
+
+Setw
+    setw(value) ----> set width; the vaule is the number of characters it takes.
+    It is used to format the output.
+    eg: let a=1 and b=1234
+        cout<<"Without setw:"<<a<<endl;
+        cout<<"Without setw:"<<b<<endl;
+        cout<<"with setw:"<<setw(4)<<a<<endl;
+        cout<<"with setw:"<<setw(4)<<b<<endl;
+    output:
+        Without setw:1
+        Without setw:1234
+        With setw:   1
+        with setw:1234
+
+
+Arrays:
+     Same as C:
+        eg. int a[4]={0,1,2,3};
+
+
+Pointer Arithmatic
+    address(new) = address(current) + i*sizeof(datatype)
