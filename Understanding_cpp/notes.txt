@@ -57,3 +57,14 @@ Arrays:
 
 Pointer Arithmatic
     address(new) = address(current) + i*sizeof(datatype)
+
+
+Structure
+    User defined data type. Derived data type. Is made of multiple data types. All variables should have values.
+
+
+Union
+    User defined, derived data type. Is made up of multiple data type. Only one variable can be used at a time.
+    Union saves more memory space than structure.----->In structure all variables will have a value but in
+        union only one variable will have a value.
+    
