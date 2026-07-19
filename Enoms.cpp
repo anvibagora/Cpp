@@ -22,11 +22,11 @@ int main(){
     };
     Color shirt = Color::Red; // Must use the scope resolution operator (::)
 
-    cout<<"Traffic light red "<<TrafficLight::Red<<endl;
+    cout<<"Traffic light red "<<signal<<endl;
     //below line gives error
-    //cout<<"Colour red "<<Color::Red<<endl;
+    //cout<<"Colour red "<<shirt<<endl;
     // Scoped enums require an explicit cast to print as an integer
-    cout << "Colour red: " << static_cast<int>(Color::Red) << endl;
+    cout << "Colour red: " <<static_cast<int>(shirt)<< endl;
 
     return 0;
 }
